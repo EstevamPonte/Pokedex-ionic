@@ -75,3 +75,49 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+.modalStyle{
+  --background: #f04141;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.floatCard {
+  height: 390px;
+  width: 350px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+.floatCard p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.imgStyle{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.itemWithTwoOreMore {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.itemWithOne {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.itemFont{
+  font-size: 20px;
+}

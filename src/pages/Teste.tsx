@@ -1,11 +1,10 @@
 import React, {Component} from 'react'
 
-class Test extends Component {
+class Test extends Component<any> {
     render(){
         return(
-            <h1>Estevam</h1>
+            <h1>{this.props.name}</h1>
         )
     }
 }
-
 export default Test
