@@ -17,7 +17,6 @@ import Card from './card'
 
 const Home: React.FC<RouteComponentProps> = (props) => {
   const [pokemons, setPokemon] = useState([])
-  const [card, setCard] = useState([])
   
 
   useIonViewWillEnter(() => {

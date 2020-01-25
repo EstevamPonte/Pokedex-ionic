@@ -2,10 +2,10 @@ import React from 'react';
 import { IonModal, IonButton, IonContent, IonBadge } from '@ionic/react';
 
 export const Modal: React.FC<any> = (props) => {
-
   return (
-        <IonContent >
+    <IonContent >
             <IonModal cssClass='modalStyle' isOpen={props.isOpen}>
+                    
                 <div className='container'>
                   <div className='floatCard'>
                     <div className='imgStyle'>
@@ -30,7 +30,7 @@ export const Modal: React.FC<any> = (props) => {
                       <div className={props.next_evolution.length === 1 ? 'itemWithOne' : 'itemWithTwoOreMore'}>
                         {props.next_evolution.map(next_evolution =>
                           <IonBadge className='itemFont' key={next_evolution.name} color="success">{next_evolution.name}</IonBadge>
-                        )}
+                          )}
                       </div>
                       :
                       <div className='itemWithOne'>
@@ -39,7 +39,7 @@ export const Modal: React.FC<any> = (props) => {
                     }
                   </div>
                 </div>
-                <IonButton onClick={() => props.setShowModal(false)}>Close Modal</IonButton>
+                <IonButton onClick={() => props.setShowModal(false)}>Close</IonButton>
             </IonModal>
         </IonContent>
   );
